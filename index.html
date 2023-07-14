@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="./style.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <header class="attribution">
+    <a href="https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH" target="_blank">&#128279 <img src="./images/favicon-32x32.png" alt=""></a>
+    <a href="https://github.com/bene-volent">
+      &#128279<span>
+        <i class="devicon-github-original"></i>
+      </a>
+      </span>
+  </header>
+  <main>
+
+    <header>
+      <div class="container">
+        <div class="header__wrapper">
+          <img class="header__logo" src="./images/logo.svg" alt="Logo">
+          <div class="header__score_wrapper">
+            <p class="header__score_title">
+              SCORE
+            </p>
+            <p class="header__score">
+              0
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="game" data-state="">
+      <div class="container">
+        <div class="game__wrapper">
+          <div class="game__text">
+            <p>You Picked</p>
+            <p>The House Picked</p>
+          </div>
+          <div class="game__window">
+            <button class="btn game__btn game__paper" data-value="2" data-select=""><img src="./images/icon-paper.svg"
+                alt=""></button>
+            <button class="btn game__btn game__scissor" data-value="3" data-select=""><img
+                src="./images/icon-scissors.svg" alt=""></button>
+            <button class="btn game__btn game__rock" data-value="1" data-select=""><img src="./images/icon-rock.svg"
+                alt=""></button>
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+    </section>
+    <section class="controls">
+      <div class="result" data-result="">
+        <p class="result__text">You <span class="result__span">won</span></p>
+        <button class="btn btn--hover result__newBtn" onclick="replayGame()">Play again</button>
+      </div>
+      <button class="btn btn--hover game__rules_open" onclick="showRules()">
+        Rules
+      </button>
+    </section>
+    <section class="rules">
+      <h2 class="rules__heading">RULES</h2>
+      <img src="./images/image-rules.svg" alt="Game Rules" class="rules__img">
+      <button class="btn  rules__close" onclick="hideRules()">
+        <img src="./images/icon-close.svg" alt="Close Rules">
+      </button>
+    </section>
+
+  </main>
+
+
+
+
+
+
+  <script src="./main.js" defer></script>
+
+</body>
+
+</html>
