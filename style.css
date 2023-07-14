@@ -513,9 +513,9 @@ main {
 }
 @media (width > 900px) {
   .rules {
-    top: 25%;
+    top: 50%;
     left: 50%;
-    translate: -50% 0;
+    translate: -50% -50%;
     border-radius: var(--size-4);
     max-width: 40rem;
     aspect-ratio: 1/1;

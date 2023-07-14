@@ -685,9 +685,9 @@ main {
     }
 
     @include mq(){
-        top: 25%;
+        top: 50%;
         left: 50%;
-        translate: -50% 0;
+        translate: -50% -50%;
 
         border-radius: var(--size-4);
 
@@ -706,6 +706,7 @@ main {
 
         padding: var(--size-8);
         
+
 
 
         &__heading{
