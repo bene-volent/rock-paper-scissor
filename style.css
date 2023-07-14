@@ -336,8 +336,8 @@ main {
   0%{
     scale:0;
   }
-  50%{scale:1}
-  100%{scale:0}
+  50%{scale:1;}
+  100%{scale:0;}
 }
 .game[data-state=played] .game__btn[data-select=player] {
   grid-row: 2/span 1;
