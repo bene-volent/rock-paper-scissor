@@ -328,8 +328,16 @@ main {
 }
 .game[data-state=played] .game__btn.won::before {
   opacity: 1;
-  scale: 1;
-  transition: scale 350ms 500ms ease-in-out;
+  animation: win-btn-shadow 3s ease-in-out infinite;
+  /*scale: 1;*/
+  /*transition: scale 350ms 500ms ease-in-out;*/
+}
+@keyframes win-btn-shadow{
+  0%{
+    scale:0;
+  }
+  50%{scale:1}
+  100%{scale:0}
 }
 .game[data-state=played] .game__btn[data-select=player] {
   grid-row: 2/span 1;
